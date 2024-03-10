@@ -1,0 +1,16 @@
+// In existing database : "myDB"  and Collection : "collection"
+//Selecting or viewing all data
+myDB.collection.find({})
+
+//Finding based on condion
+myDB.collection.find({Age : 20})
+
+//OR operation in same feild
+myDB.collection.find( { Age: { $in: [ 20, 22 ] } } )
+
+//OR operation in different feilds
+myDB.collection.find({ $or: [ {Age: 20}, {Name : "Isha"} ]})
+
+//AND operation
+myDB.collection.find({ Age:22 , Name:"Harsh" })
+myDB.collection.find({$and{ Age:22 } , { Name:"Harsh" }})
