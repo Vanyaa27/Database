@@ -1,0 +1,7 @@
+// In existing database : "myDB"  and Collection : "collection"
+
+//Inserting single document
+myDB.collection.insertOne({"Name": "Riya" , "Age": 15});
+
+//Inserting many Objects
+myDB.collection.insertMany({"Name": "Vanya" , "Age": 20}, {"Name": "Isha" , "Age": 18}, {"Name": "Harsh" , "Age": 22});
