@@ -1,4 +1,10 @@
+//Show Databases
+show dbs
+//Show Collections
+show collections
+
 // Creating Database as --> myDB
 use myDB
+
 //Collection as-->collection
 db.collection.insertOne( { "Name": "Vanya" } );  //{ feild : "value"}
